@@ -1,0 +1,22 @@
+version: '3.2'
+services:
+  api:
+    container_name:  "adonis-api"
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: sh ./init.sh
+    environment:
+      - NODE_ENV=dev
+    volumes:
+      - .:/home/app
+      - /home/app/node_modules
+    ports:
+      - "7777:7777"
+    networks:
+      - default
+
+#define network
+networks:
+  default:
+    driver: bridge

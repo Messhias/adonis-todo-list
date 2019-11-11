@@ -1,6 +1,6 @@
-# Adonis fullstack application
+# ToDo List with Adonis Framework
 
-This is the fullstack boilerplate for AdonisJs, it comes pre-configured with.
+This project is a test project for adonis framework.
 
 1. Bodyparser
 2. Session
@@ -11,8 +11,21 @@ This is the fullstack boilerplate for AdonisJs, it comes pre-configured with.
 7. Lucid ORM
 8. Migrations and seeds
 
-## Setup
+## Setup with docker
 
+You can easy setup the application using [Docker](https://docker.com) typing:
+
+```docker
+docker-compose up --build
+```
+
+If you want to run the container in detached mode you type:
+
+```docker
+docker-compose up -d --build
+```
+
+## Setup without docker
 Use the adonis command to install the blueprint
 
 ```bash
