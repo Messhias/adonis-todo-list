@@ -17,4 +17,4 @@ database/*.sqlite
 
 # packages lock
 package-lock.json
-yarn-lock
+yarn.lock
