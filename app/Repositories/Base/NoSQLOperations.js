@@ -8,7 +8,7 @@ const _ = use('lodash');
 /**
  * Repository pattern for NoSQL Operations.
  */
-class SQLOperations {
+class NoSQLOperations {
     /**
      * Model schema in database.
      *
@@ -128,7 +128,7 @@ class SQLOperations {
      * @returns {Promise<void|*>}
      */
     async show(params,response){
-        const data  = await this.getModel().findOne({id: params.id}).lean();
+        const data  = await this.getModel().findOne({_id:params.id}).lean();
         if(!data ){
             return response.status(404).json(this.notFound);
         }
@@ -147,7 +147,7 @@ class SQLOperations {
         try {
             const input = request.all();
 
-            const data  = await this.getModel().updateOne({id:  params.id }, input);
+            const data  = await this.getModel().updateOne({_id: params.id }, input);
 
             return response.status(200).json(data );
         }catch (e) {
@@ -165,13 +165,13 @@ class SQLOperations {
      */
     async destroy(params,response){
         try {
-            let hasRecord = await this.getModel().findOne({id: params.id});
+            let hasRecord = await this.getModel().findOne({_id:params.id});
 
             if(!hasRecord){
                 return response.status(404).json({error:this.notFound})
             }
 
-            const data  = await this.getModel().deleteOne({id: params.id},function(err){
+            const data  = await this.getModel().deleteOne({_id:params.id},function(err){
                 return response.status(400).json(err)
             });
 
