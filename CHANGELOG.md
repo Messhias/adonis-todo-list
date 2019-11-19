@@ -1,4 +1,16 @@
-### Updates 2019-11-18 (HEAD -> feature/repository)
+### Updates 2019-11-19 (HEAD -> feature/repository)
+>Tue, 19 Nov 2019 22:17:00 +0400
+
+>Author: Fabio William Conceição (messhias@gmail.com)
+
+>Commiter: Fabio William Conceição (messhias@gmail.com)
+
+- Created the active NoSQL and SQL repositories.
+- Started create the Base repository pattern to implement in the future repositories.
+
+
+
+### Updates 2019-11-18 (origin/feature/repository)
 >Mon, 18 Nov 2019 09:33:04 +0400
 
 >Author: Fabio William Conceição (messhias@gmail.com)
