@@ -1,5 +1,6 @@
 'use strict';
 
+
 /*
  * All commonly used functions are placed here, mostly CRUD operations
  */
