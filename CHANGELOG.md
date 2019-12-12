@@ -1,4 +1,54 @@
-### Updates 2019-11-19 (HEAD -> feature/repository)
+### updates (HEAD -> feature/repository)
+>Thu, 12 Dec 2019 23:56:04 +0400
+
+>Author: Fabio William Conceição (fabio@viame.ae)
+
+>Commiter: Fabio William Conceição (fabio@viame.ae)
+
+
+
+
+### updates
+>Thu, 12 Dec 2019 23:55:06 +0400
+
+>Author: Fabio William Conceição (fabio@viame.ae)
+
+>Commiter: Fabio William Conceição (fabio@viame.ae)
+
+
+
+
+### Default project configurations updates Updated the project identation.
+>Thu, 12 Dec 2019 23:54:10 +0400
+
+>Author: Fabio William Conceição (fabio@viame.ae)
+
+>Commiter: Fabio William Conceição (fabio@viame.ae)
+
+
+
+
+### removed the yarn lock file and added the hook for post-commit (origin/master, origin/HEAD, master)
+>Thu, 12 Dec 2019 23:29:30 +0400
+
+>Author: Fabio William Conceição (fabio@viame.ae)
+
+>Commiter: Fabio William Conceição (fabio@viame.ae)
+
+
+
+
+### started creating the repository pattern
+>Tue, 3 Dec 2019 08:54:10 +0400
+
+>Author: Fabio William Conceição (messhias@gmail.com)
+
+>Commiter: Fabio William Conceição (messhias@gmail.com)
+
+
+
+
+### Updates 2019-11-19
 >Tue, 19 Nov 2019 22:17:00 +0400
 
 >Author: Fabio William Conceição (messhias@gmail.com)
@@ -10,7 +60,7 @@
 
 
 
-### Updates 2019-11-18 (origin/feature/repository)
+### Updates 2019-11-18
 >Mon, 18 Nov 2019 09:33:04 +0400
 
 >Author: Fabio William Conceição (messhias@gmail.com)
@@ -24,7 +74,7 @@
 
 
 
-### Updates 2019-11-15 (origin/feature/controllers, feature/controllers)
+### Updates 2019-11-15 (origin/feature/controllers)
 >Fri, 15 Nov 2019 13:29:06 +0400
 
 >Author: Fabio William Conceição (messhias@gmail.com)
@@ -58,7 +108,7 @@ Possible improvements:
 
 
 
-### changelod misspelling fixes (origin/feature/migrations, feature/migrations)
+### changelod misspelling fixes (origin/feature/migrations)
 >Mon, 11 Nov 2019 20:01:15 +0400
 
 >Author: Fabio William Conceição (messhias@gmail.com)
@@ -80,7 +130,7 @@ Possible improvements:
 
 
 
-### added the changelog.md (origin/feature/docker, feature/docker)
+### added the changelog.md (origin/feature/docker)
 >Mon, 11 Nov 2019 19:32:55 +0400
 
 >Author: Fabio William Conceição (messhias@gmail.com)
@@ -104,7 +154,7 @@ Possible improvements:
 
 
 
-### project package updates (origin/master, master)
+### project package updates
 >Sun, 10 Nov 2019 20:34:17 +0400
 
 >Author: Fabio William Conceição (messhias@gmail.com)

@@ -3,6 +3,9 @@
 echo "\n\n\nYarn install:"
 yarn install
 
+echo "Adding the sqlite3"
+yarn add sqlite3
+
 echo "\n\n\nCopy .env file:"
 file="./.env.docker"
 if [ -f "$file" ]
@@ -16,7 +19,7 @@ else
 fi
 
 echo "\n\n\nRun migration:"
-docker-compose run --rm api adonis migration:run --force
+adonis migration:run --force
 
 echo "\n\n\nStart node server:"
 adonis serve --dev --polling
