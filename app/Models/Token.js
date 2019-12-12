@@ -4,6 +4,13 @@
 const Model = use('Model');
 
 class Token extends Model {
+	static boot() {
+		super.boot();
+	}
+
+	user() {
+		return this.hasOne("App/Models/User", "user_id", "id");
+	}
 }
 
 module.exports = Token;

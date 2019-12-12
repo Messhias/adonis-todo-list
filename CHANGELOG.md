@@ -1,4 +1,14 @@
-### updates (HEAD -> feature/repository)
+### started create the seeds need to finish the factories still need make the seeder read the factories. (HEAD -> feature/seeders)
+>Fri, 13 Dec 2019 00:44:38 +0400
+
+>Author: Fabio William Conceição (fabio@viame.ae)
+
+>Commiter: Fabio William Conceição (fabio@viame.ae)
+
+
+
+
+### updates (origin/feature/repository, feature/repository)
 >Thu, 12 Dec 2019 23:56:04 +0400
 
 >Author: Fabio William Conceição (fabio@viame.ae)

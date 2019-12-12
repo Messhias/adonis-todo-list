@@ -12,12 +12,30 @@
 */
 
 /** @type {import('@adonisjs/lucid/src/Factory')} */
-const Factory = use('Factory');
+const Factory = use('Factory')
+const Hash = use('Hash')
 
-Factory.blueprint('App/Models/User', (faker) => {
-    return {
-        username: faker.username(),
-        email: faker.email(),
-        password: faker.password(60),
-    }
+Factory.blueprint('App/Models/User', async (faker) => {
+	return {
+		username: faker.username(),
+		email: faker.email(),
+		password: await Hash.make(faker.password())
+	}
+});
+
+Factory.blueprint("App/Models/Token", async (faker) => {
+	return {
+		"user_id": await Factory.model("App/Models/User").create().then(result => result.id),
+		"token": faker.token(),
+		"type": faker.random(),
+		"is_revoked": 1,
+	};
+});
+
+Factory.blueprint("App/Models/Todolist", async (faker) => {
+	return {
+		"user_id": await Factory.model("App/Models/User").create().then(result => result.id),
+		"name": faker.name(),
+		"status": faker.bool(),
+	}
 });
